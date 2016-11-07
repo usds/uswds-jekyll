@@ -1,0 +1,84 @@
+{
+  "name": "bourbon-neat",
+  "version": "1.8.0",
+  "description": "A lightweight, semantic grid framework",
+  "keywords": [
+    "columns",
+    "grid",
+    "layout",
+    "media",
+    "media-queries",
+    "neat",
+    "queries",
+    "sass",
+    "scss",
+    "semantic",
+    "eyeglass-module"
+  ],
+  "homepage": "http://neat.bourbon.io",
+  "bugs": {
+    "url": "https://github.com/thoughtbot/neat/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "thoughtbot",
+    "url": "http://thoughtbot.com"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thoughtbot/neat.git"
+  },
+  "scripts": {
+    "test": "echo \"No test specified\""
+  },
+  "dependencies": {
+    "node-sass": "^3.4"
+  },
+  "devDependencies": {
+    "gulp": "^3.9",
+    "gulp-autoprefixer": "^3.1",
+    "gulp-connect": "^2.3",
+    "gulp-sass": "^2.2"
+  },
+  "eyeglass": {
+    "name": "neat",
+    "needs": "*",
+    "exports": "eyeglass-exports.js"
+  },
+  "gitHead": "f106739c8c5c3fe5833f960566bde6da2c3e00de",
+  "_id": "bourbon-neat@1.8.0",
+  "_shasum": "2ffd6dbfee45db5140f2fff280163302c73e7335",
+  "_from": "bourbon-neat@>=1.7.3 <2.0.0",
+  "_npmVersion": "3.8.1",
+  "_nodeVersion": "5.4.1",
+  "_npmUser": {
+    "name": "tysongach",
+    "email": "tyson@thoughtbot.com"
+  },
+  "dist": {
+    "shasum": "2ffd6dbfee45db5140f2fff280163302c73e7335",
+    "tarball": "https://registry.npmjs.org/bourbon-neat/-/bourbon-neat-1.8.0.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "ralphbot",
+      "email": "ralph@thoughtbot.com"
+    },
+    {
+      "name": "tysongach",
+      "email": "tyson@thoughtbot.com"
+    },
+    {
+      "name": "whmii",
+      "email": "will@mcmahan.me"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/bourbon-neat-1.8.0.tgz_1466515645750_0.6560804152395576"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/bourbon-neat/-/bourbon-neat-1.8.0.tgz",
+  "readme": "ERROR: No README data found!"
+}

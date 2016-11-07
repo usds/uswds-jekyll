@@ -1,0 +1,68 @@
+{
+  "name": "bourbon",
+  "version": "4.2.7",
+  "description": "A simple and lightweight mixin library for Sass.",
+  "keywords": [
+    "css",
+    "eyeglass-module",
+    "mixins",
+    "sass",
+    "scss"
+  ],
+  "homepage": "http://bourbon.io",
+  "bugs": {
+    "url": "https://github.com/thoughtbot/bourbon/issues"
+  },
+  "eyeglass": {
+    "needs": "*",
+    "exports": "eyeglass-exports.js"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "thoughtbot",
+    "url": "http://thoughtbot.com"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thoughtbot/bourbon.git"
+  },
+  "scripts": {
+    "test": "echo \"No test specified\""
+  },
+  "gitHead": "ba7c9d2b6b91afab087829d6a73500a8cb290abc",
+  "_id": "bourbon@4.2.7",
+  "_shasum": "48a805dff475fbf61e002a64e1e4db68d2f82fba",
+  "_from": "bourbon@>=4.2.6 <5.0.0",
+  "_npmVersion": "3.8.1",
+  "_nodeVersion": "5.4.1",
+  "_npmUser": {
+    "name": "tysongach",
+    "email": "tyson@thoughtbot.com"
+  },
+  "dist": {
+    "shasum": "48a805dff475fbf61e002a64e1e4db68d2f82fba",
+    "tarball": "https://registry.npmjs.org/bourbon/-/bourbon-4.2.7.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "ralphbot",
+      "email": "ralph@thoughtbot.com"
+    },
+    {
+      "name": "tysongach",
+      "email": "tyson@thoughtbot.com"
+    },
+    {
+      "name": "whmii",
+      "email": "will@mcmahan.me"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/bourbon-4.2.7.tgz_1460754157029_0.8141971447039396"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/bourbon/-/bourbon-4.2.7.tgz",
+  "readme": "ERROR: No README data found!"
+}
