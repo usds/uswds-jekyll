@@ -1,0 +1,29 @@
+/* ====================================================
+
+	CSS FOR THE DEMO PAGE
+	You can delete this file and its containing 
+	folder (demo) when you start your project. 
+
+	=====================================================*/
+html {
+	height: 100%;
+}
+
+body {
+	@include align-items(stretch);
+	@include display(flex);
+	@include justify-content(center);
+	background: $color-primary-darkest;
+	height: 100%;
+}
+
+.hero {
+	@include align-self(center);
+	@include display(flex);
+	background: $color-primary-darkest;
+	color: $color-cool-blue-lighter;
+}
+
+.hero__primary-heading {
+	color: white;
+}
