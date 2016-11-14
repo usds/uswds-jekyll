@@ -17,10 +17,12 @@ For Jekyll, there’s not much here since it’s up to you to build this out as 
 ## Included (Coming Soon)
 The following tools have been included to make front-end development easier. Read through their documentation. 
 - [Bourbon](http://bourbon.io) 
+- [Bourbon Neat](http://neat.bourbon.io/)
 
 ## Dependencies (Coming Soon)
 You will need to install the following before you get started:
-- [Bourbon](http://bourbon.io) 
+- [Jekyll](https://jekyllrb.com/docs/installation/) 
+- [Sass](http://sass-lang.com/install)
 
 ## CSS
 Using Sass to write your CSS is highly recommended. Your main CSS file is `assets/stylesheets/application.scss` Do not write any CSS selectors on this page. Instead, link to them with `@import` statements. 
@@ -31,4 +33,16 @@ Your project CSS is located in  `assets/stylesheets/`. The `core`, `elements`, a
 
 ## Javascript
 jQuery and the full USWDS JS file has been included. This can probably be improved a bit since both of these libraries will add significant weight and performance hits to your page. All JavaScript are imported and concatinated into a single file, `assets/javascripts/application.js`. Importants are handled with Jekyll’s `include_relative` method. Place your scripts in `assets/javascripts/scripts` and link to them in `assets/javascripts/application.js`. 
+
+## How to run
+Using the command line, the following commands should be able to get you up and running. You will need to clone this repo, remove `origin` as a remote branch, and run on local host. 
+
+```
+$ git clone git@github.com:usds/uswds-jekyll.git
+$ git remote remove origin
+$ bundle install
+$ bundle exec jekyll serve
+```
+
+When the application is running, you can view the site in the browser at http://localhost:4000
 
