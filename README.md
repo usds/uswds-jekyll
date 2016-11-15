@@ -39,6 +39,7 @@ Using the command line, the following commands should be able to get you up and 
 
 ```
 $ git clone git@github.com:usds/uswds-jekyll.git
+$ cd uswds-jekyll
 $ git remote remove origin
 $ bundle install
 $ bundle exec jekyll serve
