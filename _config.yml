@@ -36,4 +36,13 @@ exclude:
 # We specify the directory for Jekyll so we can use @imports.
 sass:
   sass_dir: assets/stylesheets/
-exclude:      [/node_modules/, gulpfile.js, Gemfile, Gemfile.lock, npm-debug.log, /css, /screenshots, /sketch-files]
+
+exclude:
+  - /node_modules/
+  - gulpfile.js
+  - Gemfile
+  - Gemfile.lock
+  - npm-debug.log
+  - /css
+  - /screenshots
+  - /sketch-files
