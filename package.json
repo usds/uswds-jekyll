@@ -6,6 +6,6 @@
     "build": "bundle exec jekyll build"
   },
   "dependencies": {
-    "uswds": "^0.13.1"
+    "uswds": "^1.6.12"
   }
 }
