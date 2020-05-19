@@ -1,12 +1,12 @@
 # USWDS + Jekyll
 
-This is a boilerplate for using the [U.S. Web Design Standards](https://standards.usa.gov/) to build static websites and prototypes with [Jekyll](https://jekyllrb.com/). 
+This is a boilerplate for using the [U.S. Web Design System](https://designsystem.digital.gov/) (USWDS) to build static websites and prototypes with [Jekyll](https://jekyllrb.com/). 
 
-Before you begin here, get acquianted with documentation for both the U.S. Web Design Standards and Jeykll. 
-- [USWDS Documentation](https://standards.usa.gov/getting-started/)
+Before you begin here, get acquianted with documentation for both USWDS and Jeykll. 
+- [USWDS Documentation](https://designsystem.digital.gov/how-to-use-uswds/)
 - [Jekyll Documentation](https://jekyllrb.com/docs/home/)
 
-The U.S. Web Design Standards’ entire feature set is included. You can find code snippets to copy and paste in:
+The U.S. Web Design System’s entire feature set is included. You can find code snippets to copy and paste in:
 
 ```
 assets/uswds/html
@@ -27,9 +27,9 @@ You will need to install the following before you get started:
 ## CSS
 Using Sass to write your CSS is highly recommended. Your main CSS file is `assets/stylesheets/application.scss` Do not write any CSS selectors on this page. Instead, link to them with `@import` statements. 
 
-The U.S. Web Design Standards CSS files are located in `assets/uswds/stylesheets`. You may use any Sass variables from the U.S. Web Design Standards in your project SCSS. To get familiar with the variables, you can read them in `assets/uswds/stylesheets/core/_variables.scss`
+The USWDS CSS files are located in `assets/uswds/stylesheets`. You may use any Sass variables from the U.S. Web Design System in your project SCSS. To get familiar with the variables, you can read them in `assets/uswds/stylesheets/core/_variables.scss`
 
-Your project CSS is located in  `assets/stylesheets/`. The `core`, `elements`, and `components` directories have been added to mirror U.S. Web Design Standards structure, but you may use whatever system you are comfortable with. 
+Your project CSS is located in  `assets/stylesheets/`. The `core`, `elements`, and `components` directories have been added to mirror U.S. Web Design System's structure, but you may use whatever system you are comfortable with. 
 
 ## Javascript
 jQuery and the full USWDS JS file has been included. This can probably be improved a bit since both of these libraries will add significant weight and performance hits to your page. All JavaScript are imported and concatinated into a single file, `assets/javascripts/application.js`. Importants are handled with Jekyll’s `include_relative` method. Place your scripts in `assets/javascripts/scripts` and link to them in `assets/javascripts/application.js`. 
