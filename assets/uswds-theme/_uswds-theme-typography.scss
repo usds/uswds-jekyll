@@ -65,9 +65,9 @@ unclassed elements:
 ----------------------------------------
 */
 
-$theme-global-paragraph-styles: false;
-$theme-global-link-styles: false;
-$theme-global-content-styles: false;
+$theme-global-paragraph-styles: true;
+$theme-global-link-styles: true;
+$theme-global-content-styles: true;
 
 /*
 ----------------------------------------
@@ -167,7 +167,7 @@ $theme-font-type-lang: false;
 $theme-font-type-mono: "roboto-mono";
 
 // sans-serif
-$theme-font-type-sans: "source-sans-pro";
+$theme-font-type-sans: "public-sans";
 
 // serif
 $theme-font-type-serif: "merriweather";
@@ -284,7 +284,7 @@ tokens.
 */
 
 $theme-font-role-ui: "sans";
-$theme-font-role-heading: "serif";
+$theme-font-role-heading: "sans";
 $theme-font-role-body: "sans";
 $theme-font-role-code: "mono";
 $theme-font-role-alt: "serif";
@@ -300,15 +300,15 @@ values from the USWDS system type scale
 ----------------------------------------
 */
 
-$theme-type-scale-3xs: 2;
-$theme-type-scale-2xs: 3;
-$theme-type-scale-xs: 4;
-$theme-type-scale-sm: 5;
-$theme-type-scale-md: 6;
-$theme-type-scale-lg: 9;
-$theme-type-scale-xl: 12;
-$theme-type-scale-2xl: 14;
-$theme-type-scale-3xl: 15;
+$theme-type-scale-3xs: micro;
+$theme-type-scale-2xs: 1;
+$theme-type-scale-xs: 2;
+$theme-type-scale-sm: 3;
+$theme-type-scale-md: 4;
+$theme-type-scale-lg: 6;
+$theme-type-scale-xl: 9;
+$theme-type-scale-2xl: 11;
+$theme-type-scale-3xl: 14;
 
 /*
 ----------------------------------------
@@ -392,11 +392,11 @@ none:    none
 
 // Body settings are the equivalent of setting the <body> element
 $theme-body-font-family: "body";
-$theme-body-font-size: "sm";
+$theme-body-font-size: "xs";
 $theme-body-line-height: 5;
 
 // If true, explicitly style the <body> element with the base styles
-$theme-style-body-element: false;
+$theme-style-body-element: true;
 
 // Headings
 $theme-h1-font-size: "2xl";

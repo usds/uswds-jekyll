@@ -8,9 +8,12 @@ folder (demo) when you start your project.
 
 body {
 	background-color: color($theme-color-primary-darker);
-	height: 100%;
 }
 
-.hero__demo {
+.demo-container {
+	display: grid;
+	height: 100vh;
+	justify-content: center;
+	align-content: center;
 	color: color($theme-color-accent-cool-lighter);
 }

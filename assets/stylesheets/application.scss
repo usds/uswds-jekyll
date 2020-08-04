@@ -1,22 +1,27 @@
 ---
 # Stylesheets
 ---
+// ----------------------------------------
+// USWDS THEME
 
-/*
-----------------------------------------
-USWDS
-Includes all USWDS SCSS
-Comment out if using individual components
-----------------------------------------
-*/
+@import "../uswds-theme/uswds-theme-general";
+@import "../uswds-theme/uswds-theme-typography";
+@import "../uswds-theme/uswds-theme-spacing";
+@import "../uswds-theme/uswds-theme-color";
+@import "../uswds-theme/uswds-theme-utilities";
+@import "../uswds-theme/uswds-theme-components";
+
+//----------------------------------------
+// USWDS
+// Includes all USWDS SCSS
+// Comment out if using individual components
+
 @import "./node_modules/uswds/src/stylesheets/uswds.scss";
 
-/*
-----------------------------------------
-USWDS INDIVIDUAL PACKAGES
-Comment out if using all components
-----------------------------------------
-*/
+// ----------------------------------------
+// USWDS INDIVIDUAL PACKAGES
+// Comment out if using all components
+
 // Required
 // @import "./node_modules/uswds/src/stylesheets/packages/required";
 // @import "./node_modules/uswds/src/stylesheets/packages/global";
@@ -53,31 +58,16 @@ Comment out if using all components
 // @import "./node_modules/uswds/src/stylesheets/packages/uswds-utilities";
 // @import "./node_modules/uswds/src/stylesheets/packages/validation";
 
-/*
-----------------------------------------
-USWDS THEME
-----------------------------------------
-*/
-@import "../uswds-theme/uswds-theme-general";
-@import "../uswds-theme/uswds-theme-typography";
-@import "../uswds-theme/uswds-theme-spacing";
-@import "../uswds-theme/uswds-theme-color";
-@import "../uswds-theme/uswds-theme-utilities";
-@import "../uswds-theme/uswds-theme-components";
+// ----------------------------------------
+// USWDS THEME CUSTOM STYLES
 
-/*
-----------------------------------------
-USWDS THEME CUSTOM STYLES
-----------------------------------------
-*/
 @import "../uswds-theme/uswds-theme-custom-styles";
 
-/*
-----------------------------------------
-CORE
-App-specific styles
-----------------------------------------
-*/
+// ----------------------------------------
+// CORE
+// App-specific styles
+
 @import "core/base";
+
 // Demo - Delete this line and import statement when you begin
 @import "demo/demo";
