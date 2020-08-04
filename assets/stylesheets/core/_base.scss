@@ -1,0 +1,13 @@
+/*
+----------------------------------------
+App-specific styles here
+----------------------------------------
+*/
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+  @include u-font('sans', 'sm');
+}
