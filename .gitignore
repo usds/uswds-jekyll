@@ -4,3 +4,5 @@ _site
 .jekyll-metadata
 .DS_Store
 node_modules
+.ruby-gemset
+.ruby-version
