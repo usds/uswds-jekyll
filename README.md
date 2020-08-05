@@ -1,6 +1,10 @@
 # USWDS + Jekyll
 
-A boilerplate for using the [U.S. Web Design System](https://designsystem.digital.gov/) (USWDS) v 2.8.0 and [USWDS Gulp](https://github.com/uswds/uswds-gulp) to build static websites and prototypes with [Jekyll](https://jekyllrb.com/).
+A boilerplate for using the [U.S. Web Design System](https://designsystem.digital.gov/) (USWDS) v 2.8.0 and [USWDS Gulp](https://github.com/uswds/uswds-gulp) to build basic static websites and quick prototypes with [Jekyll](https://jekyllrb.com/).
+
+For a fully-featured, officially supported gem see [18F's USWDS Jekyll project](https://github.com/18F/uswds-jekyll).
+
+**Related docs**
 
 - [USWDS documentation](https://designsystem.digital.gov/how-to-use-uswds/)
 - [USWDS Gulp documentation](https://github.com/uswds/uswds-gulp#readme)
@@ -22,7 +26,7 @@ $ npm install
 $ npm start
 ```
 
-After installing dependencies from NPM, `npm install` additionally runs Bundler to install required Ruby gems.
+After installing dependencies from NPM, `npm install` additionally runs Bundler to install Ruby gems required by Jekyll.
 
 `npm start` runs `bundle exec jekyll start --livereload`, and spins a demo page up at `http://localhost:4000`. Changes will automatically refresh in the browser.
 
@@ -66,6 +70,6 @@ To reset USWDS and USWDS theme settings, run ...
 $ gulp init
 ```
 
-This will re-run the initial Gulp setup as per `gulpfile.js`. This copies USWDS files to `assets/`, including `assets/uswds-theme`. Any customization to USWDS theme settings will be overwritten.
+This will re-run the initial Gulp setup as per `gulpfile.js`. This copies USWDS files to `assets/`, including `assets/uswds-theme`. Any customization to USWDS theme settings will be overwritten with defaults.
 
 After running, additional configuration may be needed to get `uswds-theme` working. See the [USWDS settings documentation](https://designsystem.digital.gov/documentation/settings/) for help.
