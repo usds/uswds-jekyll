@@ -40,7 +40,7 @@ The demo styles in `/assets/stylesheets/demo` and placeholder markup in `index.h
 
 The main SCSS manifest is `assets/stylesheets/application.scss`. USWDS theme files are imported from `assets/uswds-theme`, and USWDS is imported from `node_modules/uswds`. In this implementation, all of USWDS is imported by default. For a custom configuration, comment/uncomment the desired USWDS components in the manifest.
 
-Project CSS is located in `assets/stylesheets/`. Create directories and `.scss` to suit project needs and `@import` them in `application.scss`.
+Project CSS is located in `assets/stylesheets/`. Create directories and `.scss` to suit project needs and `@import` them in `application.scss`. USWDS variables will be accessible across custom stylesheets.
 
 ### JavaScript
 JavaScript is imported and concatenated into `assets/js/application.js`. Importants are handled with Jekyll’s `include_relative` method.
