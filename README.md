@@ -58,9 +58,9 @@ $ npm install
 $ gulp update
 ```
 
-`npm install` will update USWDS files (and any other dependencies, too) in `node_modules`. Double check that updates haven't changed paths referenced in `assets/stylesheets/application.scss`.
+`npm install` will update USWDS files (and any other dependencies, too) in `node_modules`.
 
-`gulp update` copies fonts, images, JS, and builds SASS. It skips the `copy-uswds-setup` portion of `gulp init`, which would overwrite existing theme settings in `assets/uswds-theme`.
+`gulp update` copies fonts, images, JS, and builds SASS. It skips the `copy-uswds-setup` portion of `gulp init`, which would overwrite existing theme settings in `assets/uswds-theme`. Check that USWDS updates haven't altered the setup of theme files. Double check that updates haven't changed paths referenced in `assets/stylesheets/application.scss`.
 
 ### Reset USWDS
 
