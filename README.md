@@ -1,43 +1,71 @@
 # USWDS + Jekyll
 
-This is a boilerplate for using the [U.S. Web Design System](https://designsystem.digital.gov/) (USWDS) to build static websites and prototypes with [Jekyll](https://jekyllrb.com/).
+A boilerplate for using the [U.S. Web Design System](https://designsystem.digital.gov/) (USWDS) v 2.8.0 and [USWDS Gulp](https://github.com/uswds/uswds-gulp) to build static websites and prototypes with [Jekyll](https://jekyllrb.com/).
 
-Before you begin here, get acquianted with documentation for both USWDS and Jeykll.
-- [USWDS Documentation](https://designsystem.digital.gov/how-to-use-uswds/)
-- [Jekyll Documentation](https://jekyllrb.com/docs/home/)
+- [USWDS documentation](https://designsystem.digital.gov/how-to-use-uswds/)
+- [USWDS Gulp documentation](https://github.com/uswds/uswds-gulp#readme)
+- [Jekyll documentation](https://jekyllrb.com/docs/home/)
 
-The U.S. Web Design System’s entire feature set is included. You can find code snippets to copy and paste in:
+## Setup
 
-```
-assets/uswds/html
-```
+### Prerequisites
 
-For Jekyll, there’s not much here since it’s up to you to build this out as you see fit. Only the example pages and posts have been removed. 
+- [Ruby](https://www.ruby-lang.org/en/documentation/installation/)
+  - [Bundler](https://bundler.io/)
+- [Node](https://nodejs.org/)
+- [Gulp CLI](https://gulpjs.com/docs/en/getting-started/quick-start)
 
-## Dependencies (Coming Soon)
-You will need to install the following before you get started:
-- [Jekyll](https://jekyllrb.com/docs/installation/)
-- [Sass](http://sass-lang.com/install)
-
-## CSS
-Using Sass to write your CSS is highly recommended. Your main CSS file is `assets/stylesheets/application.scss` Do not write any CSS selectors on this page. Instead, link to them with `@import` statements.
-
-The USWDS CSS files are located in `assets/uswds/stylesheets`. You may use any Sass variables from the U.S. Web Design System in your project SCSS. To get familiar with the variables, you can read them in `assets/uswds/stylesheets/core/_variables.scss`
-
-Your project CSS is located in  `assets/stylesheets/`. The `core`, `elements`, and `components` directories have been added to mirror U.S. Web Design System's structure, but you may use whatever system you are comfortable with.
-
-## Javascript
-jQuery and the full USWDS JS file has been included. This can probably be improved a bit since both of these libraries will add significant weight and performance hits to your page. All JavaScript are imported and concatinated into a single file, `assets/javascripts/application.js`. Importants are handled with Jekyll’s `include_relative` method. Place your scripts in `assets/javascripts/scripts` and link to them in `assets/javascripts/application.js`.
-
-## How to run
-Using the command line, the following commands should be able to get you up and running. You will need to clone this repo, remove `origin` as a remote branch, and run on local host.
+### Install and run
 
 ```
-$ git clone git@github.com:usds/uswds-jekyll.git
-$ cd uswds-jekyll
-$ git remote remove origin
-$ bundle install
-$ bundle exec jekyll serve
+$ npm install
+$ npm start
 ```
 
-When the application is running, you can view the site in the browser at http://localhost:4000
+After installing dependencies from NPM, `npm install` additionally runs Bundler to install required Ruby gems.
+
+`npm start` runs `bundle exec jekyll start --livereload`, and spins a demo page up at `http://localhost:4000`. Changes will automatically refresh in the browser.
+
+## Customization
+
+### Erase demo files
+
+The demo styles in `/assets/stylesheets/demo` and placeholder markup in `index.html` can be erased once the project is running locally.
+
+### Stylesheets
+
+The main SCSS manifest is `assets/stylesheets/application.scss`. USWDS theme files are imported from `assets/uswds-theme`, and USWDS is imported from `node_modules/uswds`. In this implementation, all of USWDS is imported by default. For a custom configuration, comment/uncomment the desired USWDS components in the manifest.
+
+Project CSS is located in `assets/stylesheets/`. Create directories and `.scss` to suit project needs and `@import` them in `application.scss`.
+
+### JavaScript
+JavaScript is imported and concatenated into `assets/js/application.js`. Importants are handled with Jekyll’s `include_relative` method.
+
+Place scripts in `assets/js` and link to them in `assets/javascripts/application.js`.
+
+## Maintenance
+
+### Update USWDS without changing theme settings
+
+Edit the USWDS version number in `package.json`, then ...
+
+```
+$ npm install
+$ gulp update
+```
+
+`npm install` will update USWDS files (and any other dependencies, too) in `node_modules`. Double check that updates haven't changed paths referenced in `assets/stylesheets/application.scss`.
+
+`gulp update` copies fonts, images, JS, and builds SASS. It skips the `copy-uswds-setup` portion of `gulp init`, which would overwrite existing theme settings in `assets/uswds-theme`.
+
+### Reset USWDS
+
+To reset USWDS and USWDS theme settings, run ...
+
+```
+$ gulp init
+```
+
+This will re-run the initial Gulp setup as per `gulpfile.js`. This copies USWDS files to `assets/`, including `assets/uswds-theme`. Any customization to USWDS theme settings will be overwritten.
+
+After running, additional configuration may be needed to get `uswds-theme` working. See the [USWDS settings documentation](https://designsystem.digital.gov/documentation/settings/) for help.
