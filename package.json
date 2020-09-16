@@ -30,9 +30,5 @@
     "sass": "^1.26.10",
     "uswds": "^2.8.1",
     "uswds-gulp": "github:uswds/uswds-gulp"
-  },
-  "dependencies": {
-    "yargs": "^16.0.3",
-    "yargs-parser": "^20.0.0"
   }
 }
