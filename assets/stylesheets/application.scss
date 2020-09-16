@@ -16,7 +16,7 @@
 // Includes all USWDS SCSS
 // Comment out if using individual components
 
-@import "./node_modules/uswds/src/stylesheets/uswds.scss";
+@import "../../node_modules/uswds/src/stylesheets/uswds.scss";
 
 // ----------------------------------------
 // USWDS INDIVIDUAL PACKAGES
@@ -65,9 +65,11 @@
 
 // ----------------------------------------
 // CORE
-// App-specific styles
+// Styles specific to your app
 
 @import "core/base";
 
+// ----------------------------------------
 // Demo - Delete this line and import statement when you begin
+
 @import "demo/demo";
