@@ -1,29 +1,19 @@
-/* ====================================================
-
-	CSS FOR THE DEMO PAGE
-	You can delete this file and its containing 
-	folder (demo) when you start your project. 
-
-	=====================================================*/
-html {
-	height: 100%;
-}
+/*
+----------------------------------------
+CSS FOR THE DEMO PAGE
+You can delete this file and its containing
+folder (demo) when you start your project.
+----------------------------------------
+*/
 
 body {
-	@include align-items(stretch);
-	@include display(flex);
-	@include justify-content(center);
-	background: $color-primary-darkest;
-	height: 100%;
+	background-color: color($theme-color-primary-darker);
 }
 
-.hero {
-	@include align-self(center);
-	@include display(flex);
-	background: $color-primary-darkest;
-	color: $color-cool-blue-lighter;
-}
-
-.hero__primary-heading {
-	color: white;
+.demo-container {
+	display: grid;
+	height: 100vh;
+	justify-content: center;
+	align-content: center;
+	color: color($theme-color-accent-cool-lighter);
 }
