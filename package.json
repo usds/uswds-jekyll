@@ -26,8 +26,11 @@
     "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
+    "htmllint-cli": "0.0.7",
+    "markdownlint-cli": "^0.24.0",
     "postcss-csso": "^4.0.0",
     "sass": "^1.26.10",
+    "sass-lint": "^1.13.1",
     "uswds": "^2.8.1",
     "uswds-gulp": "github:uswds/uswds-gulp"
   }
