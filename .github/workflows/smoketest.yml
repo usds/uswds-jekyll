@@ -39,9 +39,9 @@ jobs:
             ${{ runner.os }}-gems-
       - name: Bundle config
         run: bundle config path ~/bundle-cache
-      - name: Node setup
+      - name: Node and Ruby setup
         run: npm install
-      - name: Test
+      - name: Check jekyll configuration
         run: npm run-script hyde
   source-lint:
     runs-on: ubuntu-latest
