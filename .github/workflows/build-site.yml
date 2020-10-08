@@ -1,0 +1,50 @@
+# This workflow demonstrates building the website using jekyll.
+# If you are just using github pages, this is not necessarily useful, but if you
+# want to (for example) publish branch builds to a separate preview location,
+# this can serve as a starting point for doing that.
+
+# Unlike the pure github-pages approach, this build will also continue to work if
+# you upgrade to a version of jekyll that github does not support.
+name: Website Build
+
+on:
+  workflow_dispatch: # you will be able to run this by pushing a button on the "Actions" tab
+
+jobs:
+  build-site:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js 12
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Use ruby 2.6
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.6 # can change this to 2.7 or whatever version you prefer
+      - name: Cache npm local files
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.npm
+            ./node_modules
+          key: ${{ runner.os }}-npm-${{ hashFiles('package-lock.json', 'package.json') }}
+      - name: Cache ruby gems
+        uses: actions/cache@v1
+        with:
+          path: ~/bundle-cache
+          key: ${{ runner.os }}-gem-bundle-${{ hashFiles('Gemfile', 'Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      - name: Bundle config
+        run: bundle config path ~/bundle-cache
+      - name: Dependencies
+        run: npm install
+      - name: Build
+        run: npm run-script build
+      - name: Upload built website to github
+        uses: actions/upload-artifact@v2
+        with:
+          name: static-site
+          path: _site
