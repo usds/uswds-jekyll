@@ -14,7 +14,7 @@
   "homepage": "https://github.com/usds/uswds-jekyll#readme",
   "private": true,
   "scripts": {
-    "postinstall": "[[ -z \"$SKIP_BUNDLE\" ]] && bundle || echo Skipped Ruby Install",
+    "postinstall": "[ -z \"$SKIP_BUNDLE\" ] && bundle || echo Skipped Ruby Install",
     "start": "bundle exec jekyll serve --livereload",
     "lint": "npm run lint:html && npm run lint:scss",
     "lint:html": "htmllint $(find . -name node_modules -prune -false -o -name '*.html')",
