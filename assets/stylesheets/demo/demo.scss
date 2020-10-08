@@ -7,13 +7,13 @@ folder (demo) when you start your project.
 */
 
 body {
-	background-color: color($theme-color-primary-darker);
+  background-color: color($theme-color-primary-darker);
 }
 
 .demo-container {
-	display: grid;
-	height: 100vh;
-	justify-content: center;
-	align-content: center;
-	color: color($theme-color-accent-cool-lighter);
+  align-content: center;
+  color: color($theme-color-accent-cool-lighter);
+  display: grid;
+  height: 100vh;
+  justify-content: center;
 }

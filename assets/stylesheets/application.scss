@@ -4,72 +4,72 @@
 // ----------------------------------------
 // USWDS THEME
 
-@import "../uswds-theme/uswds-theme-general";
-@import "../uswds-theme/uswds-theme-typography";
-@import "../uswds-theme/uswds-theme-spacing";
-@import "../uswds-theme/uswds-theme-color";
-@import "../uswds-theme/uswds-theme-utilities";
-@import "../uswds-theme/uswds-theme-components";
+@import '../uswds-theme/uswds-theme-general';
+@import '../uswds-theme/uswds-theme-typography';
+@import '../uswds-theme/uswds-theme-spacing';
+@import '../uswds-theme/uswds-theme-color';
+@import '../uswds-theme/uswds-theme-utilities';
+@import '../uswds-theme/uswds-theme-components';
 
 //----------------------------------------
 // USWDS
 // Includes all USWDS SCSS
 // Comment out if using individual components
 
-@import "../../node_modules/uswds/src/stylesheets/uswds.scss";
+@import '../../node_modules/uswds/src/stylesheets/uswds';
 
 // ----------------------------------------
 // USWDS INDIVIDUAL PACKAGES
 // Comment out if using all components
 
 // Required
-// @import "./node_modules/uswds/src/stylesheets/packages/required";
-// @import "./node_modules/uswds/src/stylesheets/packages/global";
-// @import "./node_modules/uswds/src/stylesheets/base/accessibility";
+// @import './node_modules/uswds/src/stylesheets/packages/required';
+// @import './node_modules/uswds/src/stylesheets/packages/global';
+// @import './node_modules/uswds/src/stylesheets/base/accessibility';
 
 // Optional
-// @import "./node_modules/uswds/src/stylesheets/packages/form-controls";
-// @import "./node_modules/uswds/src/stylesheets/packages/form-templates";
-// @import "./node_modules/uswds/src/stylesheets/packages/layout-grid";
-// @import "./node_modules/uswds/src/stylesheets/packages/typography";
-// @import "./node_modules/uswds/src/stylesheets/packages/usa-accordion";
-// @import "./node_modules/uswds/src/stylesheets/packages/usa-alert";
-// @import "./node_modules/uswds/src/stylesheets/packages/usa-banner";
-// @import "./node_modules/uswds/src/stylesheets/packages/usa-breadcrumb";
-// @import "./node_modules/uswds/src/stylesheets/packages/usa-button-group";
-// @import "./node_modules/uswds/src/stylesheets/packages/usa-button";
-// @import "./node_modules/uswds/src/stylesheets/packages/usa-card";
-// @import "./node_modules/uswds/src/stylesheets/packages/usa-checklist";
-// @import "./node_modules/uswds/src/stylesheets/packages/usa-footer";
-// @import "./node_modules/uswds/src/stylesheets/packages/usa-header";
-// @import "./node_modules/uswds/src/stylesheets/packages/usa-hero";
-// @import "./node_modules/uswds/src/stylesheets/packages/usa-media-block";
-// @import "./node_modules/uswds/src/stylesheets/packages/usa-megamenu";
-// @import "./node_modules/uswds/src/stylesheets/packages/usa-nav-container";
-// @import "./node_modules/uswds/src/stylesheets/packages/usa-nav";
-// @import "./node_modules/uswds/src/stylesheets/packages/usa-navbar";
-// @import "./node_modules/uswds/src/stylesheets/packages/usa-search";
-// @import "./node_modules/uswds/src/stylesheets/packages/usa-sidenav";
-// @import "./node_modules/uswds/src/stylesheets/packages/usa-skipnav";
-// @import "./node_modules/uswds/src/stylesheets/packages/usa-table";
-// @import "./node_modules/uswds/src/stylesheets/packages/usa-tag";
-// @import "./node_modules/uswds/src/stylesheets/packages/usa-tooltip";
-// @import "./node_modules/uswds/src/stylesheets/packages/uswds-fonts";
-// @import "./node_modules/uswds/src/stylesheets/packages/uswds-utilities";
-// @import "./node_modules/uswds/src/stylesheets/packages/validation";
+// @import './node_modules/uswds/src/stylesheets/packages/form-controls';
+// @import './node_modules/uswds/src/stylesheets/packages/form-templates';
+// @import './node_modules/uswds/src/stylesheets/packages/layout-grid';
+// @import './node_modules/uswds/src/stylesheets/packages/typography';
+// @import './node_modules/uswds/src/stylesheets/packages/usa-accordion';
+// @import './node_modules/uswds/src/stylesheets/packages/usa-alert';
+// @import './node_modules/uswds/src/stylesheets/packages/usa-banner';
+// @import './node_modules/uswds/src/stylesheets/packages/usa-breadcrumb';
+// @import './node_modules/uswds/src/stylesheets/packages/usa-button-group';
+// @import './node_modules/uswds/src/stylesheets/packages/usa-button';
+// @import './node_modules/uswds/src/stylesheets/packages/usa-card';
+// @import './node_modules/uswds/src/stylesheets/packages/usa-checklist';
+// @import './node_modules/uswds/src/stylesheets/packages/usa-footer';
+// @import './node_modules/uswds/src/stylesheets/packages/usa-header';
+// @import './node_modules/uswds/src/stylesheets/packages/usa-hero';
+// @import './node_modules/uswds/src/stylesheets/packages/usa-media-block';
+// @import './node_modules/uswds/src/stylesheets/packages/usa-megamenu';
+// @import './node_modules/uswds/src/stylesheets/packages/usa-nav-container';
+// @import './node_modules/uswds/src/stylesheets/packages/usa-nav';
+// @import './node_modules/uswds/src/stylesheets/packages/usa-navbar';
+// @import './node_modules/uswds/src/stylesheets/packages/usa-search';
+// @import './node_modules/uswds/src/stylesheets/packages/usa-sidenav';
+// @import './node_modules/uswds/src/stylesheets/packages/usa-skipnav';
+// @import './node_modules/uswds/src/stylesheets/packages/usa-table';
+// @import './node_modules/uswds/src/stylesheets/packages/usa-tag';
+// @import './node_modules/uswds/src/stylesheets/packages/usa-tooltip';
+// @import './node_modules/uswds/src/stylesheets/packages/uswds-fonts';
+// @import './node_modules/uswds/src/stylesheets/packages/uswds-utilities';
+// @import './node_modules/uswds/src/stylesheets/packages/validation';
 
 // ----------------------------------------
 // USWDS THEME CUSTOM STYLES
 
-@import "../uswds-theme/uswds-theme-custom-styles";
+@import '../uswds-theme/uswds-theme-custom-styles';
 
 // ----------------------------------------
 // CORE
 // Styles specific to your app
 
-@import "core/base";
+@import 'core/base';
 
 // ----------------------------------------
 // Demo - Delete this line and import statement when you begin
 
-@import "demo/demo";
+@import 'demo/demo';

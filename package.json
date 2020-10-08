@@ -14,8 +14,12 @@
   "homepage": "https://github.com/usds/uswds-jekyll#readme",
   "private": true,
   "scripts": {
-    "postinstall": "bundle",
+    "postinstall": "[ -z \"$SKIP_BUNDLE\" ] && bundle || echo Skipped Ruby Install",
     "start": "bundle exec jekyll serve --livereload",
+    "lint": "npm run lint:html && npm run lint:scss",
+    "lint:html": "htmllint $(find . -name node_modules -prune -false -o -name '*.html')",
+    "lint:scss": "sass-lint --verbose --no-exit",
+    "hyde": "bundle exec jekyll hyde",
     "build": "bundle exec jekyll build"
   },
   "devDependencies": {
@@ -26,8 +30,11 @@
     "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
+    "htmllint-cli": "0.0.7",
+    "markdownlint-cli": "^0.24.0",
     "postcss-csso": "^4.0.0",
     "sass": "^1.26.10",
+    "sass-lint": "^1.13.1",
     "uswds": "^2.8.1",
     "uswds-gulp": "github:uswds/uswds-gulp"
   }

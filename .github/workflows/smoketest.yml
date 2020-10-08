@@ -1,0 +1,67 @@
+# Smoketest/code lint checks for Jekyll site
+
+name: Smoke Tests
+
+# Controls when the action will run. Triggers the workflow on pull request
+# events but only for the master branch
+on:
+  pull_request:
+    branches: [ master ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  jekyll-lint:
+    runs-on: ubuntu-latest
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+      - name: Use Node.js 12
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Use ruby 2.6
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.6 # can change this to 2.7 or whatever version you prefer
+      - name: Cache npm local files
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.npm
+            ./node_modules
+          key: ${{ runner.os }}-npm-${{ hashFiles('package-lock.json', 'package.json') }}
+      - name: Cache ruby gems
+        uses: actions/cache@v1
+        with:
+          path: ~/bundle-cache
+          key: ${{ runner.os }}-gem-bundle-${{ hashFiles('Gemfile', 'Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      - name: Bundle config
+        run: bundle config path ~/bundle-cache
+      - name: Node and Ruby setup
+        run: npm install
+      - name: Check jekyll configuration
+        run: npm run-script hyde
+  source-lint:
+    runs-on: ubuntu-latest
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+      - name: Use Node.js 12
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Cache npm local files
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.npm
+            ./node_modules
+          key: npm-${{ hashFiles('frontend/package-lock.json', 'frontend/package.json') }}
+      - name: Node setup
+        run: npm install
+        env:
+          SKIP_BUNDLE: true
+      - name: Lint
+        run: npm run-script lint

@@ -1,0 +1,7 @@
+options:
+    max-warnings: 10
+files:
+  include: 'assets/stylesheets/**/*.scss'
+rules:
+  no-css-comments: 0
+  no-empty-rulesets: 1
